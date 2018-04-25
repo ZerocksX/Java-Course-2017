@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="hr.fer.andriod.hw0036492049.FormActivity">
+
+    <EditText
+        android:id="@+id/pathText"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp60"
+        android:hint="@string/unestite_relativnu_putanju"/>
+
+    <Button
+        android:id="@+id/fetchButton"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/pathText"
+        android:text="@string/ucitaj"/>
+
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fetchButton"
+        android:visibility="invisible"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/avatar_image" />
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/avatarImage"
+        android:hint="@string/ime"/>
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/firstName"
+        android:hint="@string/prezime"/>
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/lastName"
+        android:hint="@string/broj_mobitela"/>
+    <TextView
+        android:id="@+id/eMail"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/phoneNumber"
+        android:hint="@string/e_mail"/>
+
+
+</RelativeLayout>

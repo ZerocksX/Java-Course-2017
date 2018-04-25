@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="hr.fer.andriod.hw0036492049.MainActivity">
+
+    <Button
+        android:id="@+id/calculusButton"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:text="@string/matematika" />
+
+    <Button
+        android:id="@+id/formButton"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/calculusButton"
+        android:text="@string/statistika" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="hr.fer.andriod.hw0036492049.CalculusActivity">
+
+    <TextView
+        android:id="@+id/spinnerTitle"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_centerHorizontal="true"
+        android:text="@string/operacija" />
+
+    <Spinner
+        android:id="@+id/operationSpinner"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/spinnerTitle"
+        android:layout_centerHorizontal="true">
+
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/firstInput"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/operationSpinner"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/prvi_broj"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/secondInput"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/firstInput"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/drugi_broj"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/startOperation"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/secondInput"
+        android:layout_centerHorizontal="true"
+        android:text="@string/izracunaj" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">hw17-0036492049</string>
+    <string name="izracunaj">Izračunaj</string>
+    <string name="prvi_broj">Prvi broj</string>
+    <string name="drugi_broj">Drugi broj</string>
+    <string name="operacija">Operacija</string>
+    <string name="message">message</string>
+    <string name="ok">OK</string>
+    <string name="send_report">Pošalji izvještaj</string>
+    <string name="matematika">Matematika</string>
+    <string name="statistika">Statistika</string>
+    <string name="unestite_relativnu_putanju">Unestite relativnu putanju</string>
+    <string name="avatar_image">Avatar image</string>
+    <string name="ucitaj">Učitaj</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="broj_mobitela">Broj mobitela</string>
+    <string name="e_mail">E mail</string>
+</resources>

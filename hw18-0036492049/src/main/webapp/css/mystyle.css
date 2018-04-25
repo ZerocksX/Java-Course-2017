@@ -1,0 +1,40 @@
+h1 {
+    font-style: italic;
+    color: #8ea6c1;
+}
+
+h2 {
+    font-style: oblique;
+    font-family: Serif, serif;
+}
+
+.image{
+    width:auto;
+    max-width:1000px;
+}
+
+.thumbnail {
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #000000;
+    display: inline-block;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 4px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.homeButton{
+    background-color: #d1c8f3;
+    color: #000000;
+    float: right;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerija</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/htmlescaping.js"></script>
+    <script type="text/javascript"><!--
+
+    /**
+     * On start initialize
+     */
+    $(document).ready(
+        initialize
+    );
+    /**
+     * Clears '#main' and shows all tags
+     */
+    function initialize() {
+        $.ajax({
+            url: 'allTags',
+            data: {
+                dummy: Math.random()
+            },
+            dataType: 'json',
+            success: function (data) {
+                var tags = data;
+                var main = $("#main");
+                main.html("");
+                var title = document.createElement('h2');
+                title.innerHTML = 'Dobrodošli u galeriju. Slijede oznake:';
+                main.append(title);
+                for (var i = 0; i < tags.length; i++) {
+                    var tag = htmlEscape(tags[i]);
+                    var button = document.createElement('button');
+                    button.setAttribute('class', 'button');
+                    button.innerHTML = tag;
+                    button.onclick = loadImagesForTag;
+                    main.append(button);
+                }
+            }
+        });
+    }
+    /**
+     * Loads all images for the tag in the button innerHTML and displays them on '#main'
+     */
+    function loadImagesForTag() {
+        var tag = this.innerHTML;
+        $.ajax({
+            url: 'getTag',
+            data: {
+                tag: tag,
+                dummy: Math.random()
+            },
+            dataType: 'json',
+            success: function (data) {
+                var images = data;
+                var main = $("#main");
+                main.html("");
+                var title = document.createElement('h2');
+                title.innerHTML = "Slijede slike s oznakom '" + tag + "'";
+                main.append(title);
+                for (var i = 0; i < images.length; i++) {
+                    var image = document.createElement('img');
+                    image.setAttribute('src', 'getThumbnail?path=' + images[i].path);
+                    image.setAttribute('class', 'thumbnail');
+                    image.onclick = loadImage;
+                    main.append(image);
+                }
+            }
+        });
+        /**
+         * Displays an image and its name and tags as buttons on '#main'<br/>
+         * used as onclick handler on an image
+         */
+        function loadImage() {
+            var path = this.getAttribute('src').substring(18);
+            console.log(path);
+            $.ajax({
+                url: 'getImage',
+                data: {
+                    path: path,
+                    dummy: Math.random()
+                },
+                dataType: 'json',
+                success: function (data) {
+                    var image = data;
+                    var main = $("#main");
+                    main.html("");
+
+                    var title = document.createElement('h1');
+                    title.innerHTML = image.name;
+                    main.append(title);
+                    main.append(document.createElement('br'));
+
+                    var im = document.createElement('img');
+                    im.setAttribute('src', 'getPureImage?path=' + image.path);
+                    im.setAttribute('class', "image");
+                    main.append(im);
+                    main.append(document.createElement('br'));
+
+                    var tags = image.tags;
+                    for (var i = 0; i < tags.length; i++) {
+                        var tag = htmlEscape(tags[i]);
+                        var button = document.createElement('button');
+                        button.setAttribute('class', 'button');
+                        button.innerHTML = tag;
+                        button.onclick = loadImagesForTag;
+                        main.append(button);
+                    }
+                }
+            })
+        }
+    }
+    //--></script>
+</head>
+<body>
+<button type="button" class="homeButton" onclick="initialize()">Početna stranica</button>
+<br>
+<div id="main">&nbsp;</div>
+</body>
+</html>

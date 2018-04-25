@@ -1,0 +1,2 @@
+Glasanje za omiljeni bend:	Od sljedećih bendova, koji Vam je bend najdraži? Kliknite na link kako biste glasali!	bands-poll-options.txt
+Glasanje za omiljeni meme:	Od slijedećih meme-ova, koji Vam je najdraži	meme-poll-options.txt

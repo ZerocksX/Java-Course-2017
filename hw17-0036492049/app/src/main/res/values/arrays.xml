@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="operation_array">
+        <item>Zbrajanje</item>
+        <item>Oduzimanje</item>
+        <item>Množenje</item>
+        <item>Dijeljenje</item>
+    </string-array>
+</resources>

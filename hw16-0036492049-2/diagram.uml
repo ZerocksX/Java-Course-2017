@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="568.5" y="162.0">hr.fer.zemris.java.hw16.jvdraw.model.FilledOvalObject</node>
+    <node x="541.0" y="81.0">hr.fer.zemris.java.hw16.jvdraw.model.OvalObject</node>
+    <node x="462.33333333333337" y="263.0">hr.fer.zemris.java.hw16.jvdraw.JDrawingCanvas</node>
+    <node x="326.5" y="162.0">hr.fer.zemris.java.hw16.jvdraw.model.DrawingObjectListModel</node>
+    <node x="763.0" y="162.0">hr.fer.zemris.java.hw16.jvdraw.colors.IColorProvider</node>
+    <node x="520.1447368421053" y="0.0">hr.fer.zemris.java.hw16.jvdraw.model.GeometricalObject</node>
+    <node x="100.5" y="162.0">hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelListener</node>
+    <node x="0.0" y="263.0">hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelImpl</node>
+    <node x="691.0" y="81.0">hr.fer.zemris.java.hw16.jvdraw.model.LineObject</node>
+    <node x="492.83333333333337" y="354.0">hr.fer.zemris.java.hw16.jvdraw.JVDraw</node>
+    <node x="915.780701754386" y="263.0">hr.fer.zemris.java.hw16.jvdraw.colors.JColorArea</node>
+    <node x="931.0" y="162.0">hr.fer.zemris.java.hw16.jvdraw.colors.ColorChangeListener</node>
+    <node x="140.28070175438597" y="81.0">hr.fer.zemris.java.hw16.jvdraw.model.DrawingModel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.DrawingObjectListModel" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModel">
+      <point x="0.0" y="-15.5" />
+      <point x="437.0" y="137.0" />
+      <point x="265.280701754386" y="137.0" />
+      <point x="50.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelImpl" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModel">
+      <point x="0.0" y="-15.5" />
+      <point x="90.0" y="243.0" />
+      <point x="74.88596491228071" y="243.0" />
+      <point x="74.88596491228071" y="137.0" />
+      <point x="165.28070175438597" y="137.0" />
+      <point x="-50.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JDrawingCanvas" target="hr.fer.zemris.java.hw16.jvdraw.model.LineObject">
+      <point x="68.33333333333337" y="-15.5" />
+      <point x="612.6666666666667" y="243.0" />
+      <point x="752.5" y="243.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelImpl" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelListener">
+      <point x="60.0" y="-15.5" />
+      <point x="150.0" y="243.0" />
+      <point x="134.83333333333331" y="243.0" />
+      <point x="-68.66666666666669" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JDrawingCanvas" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingObjectListModel">
+      <point x="-13.666666666666629" y="-15.5" />
+      <point x="530.6666666666667" y="213.0" />
+      <point x="492.25" y="213.0" />
+      <point x="55.25" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JDrawingCanvas" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelListener">
+      <point x="-68.33333333333331" y="-15.5" />
+      <point x="476.00000000000006" y="233.0" />
+      <point x="203.5" y="233.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelImpl" target="hr.fer.zemris.java.hw16.jvdraw.model.GeometricalObject">
+      <point x="-60.0" y="-15.5" />
+      <point x="30.0" y="243.0" />
+      <point x="63.88596491228071" y="243.0" />
+      <point x="63.88596491228071" y="56.0" />
+      <point x="549.6447368421053" y="56.0" />
+      <point x="-59.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JVDraw" target="hr.fer.zemris.java.hw16.jvdraw.JDrawingCanvas">
+      <point x="8.583333333333314" y="-15.5" />
+      <point x="552.9166666666667" y="314.0" />
+      <point x="585.3333333333334" y="314.0" />
+      <point x="41.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.FilledOvalObject" target="hr.fer.zemris.java.hw16.jvdraw.model.OvalObject">
+      <point x="0.0" y="-15.5" />
+      <point x="650.0" y="137.0" />
+      <point x="635.5" y="137.0" />
+      <point x="31.5" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.LineObject" target="hr.fer.zemris.java.hw16.jvdraw.model.GeometricalObject">
+      <point x="0.0" y="-15.5" />
+      <point x="752.5" y="56.0" />
+      <point x="667.6447368421053" y="56.0" />
+      <point x="59.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JVDraw" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelImpl">
+      <point x="-42.916666666666686" y="-15.5" />
+      <point x="501.4166666666667" y="334.0" />
+      <point x="90.0" y="334.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JVDraw" target="hr.fer.zemris.java.hw16.jvdraw.colors.JColorArea">
+      <point x="25.75" y="-15.5" />
+      <point x="570.0833333333334" y="324.0" />
+      <point x="947.030701754386" y="324.0" />
+      <point x="-31.25" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JVDraw" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingObjectListModel">
+      <point x="-25.75" y="-15.5" />
+      <point x="518.5833333333334" y="324.0" />
+      <point x="342.86403508771934" y="324.0" />
+      <point x="342.86403508771934" y="243.0" />
+      <point x="381.75" y="243.0" />
+      <point x="-55.25" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModelListener" target="hr.fer.zemris.java.hw16.jvdraw.model.DrawingModel">
+      <point x="0.0" y="-15.5" />
+      <point x="203.5" y="137.0" />
+      <point x="215.28070175438597" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.model.OvalObject" target="hr.fer.zemris.java.hw16.jvdraw.model.GeometricalObject">
+      <point x="0.0" y="-15.5" />
+      <point x="604.0" y="56.0" />
+      <point x="608.6447368421053" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JDrawingCanvas" target="hr.fer.zemris.java.hw16.jvdraw.model.OvalObject">
+      <point x="13.666666666666629" y="-15.5" />
+      <point x="558.0" y="137.0" />
+      <point x="572.5" y="137.0" />
+      <point x="-31.5" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.JDrawingCanvas" target="hr.fer.zemris.java.hw16.jvdraw.model.FilledOvalObject">
+      <point x="41.0" y="-15.5" />
+      <point x="585.3333333333334" y="233.0" />
+      <point x="650.0" y="233.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.colors.JColorArea" target="hr.fer.zemris.java.hw16.jvdraw.colors.IColorProvider">
+      <point x="-41.66666666666666" y="-15.5" />
+      <point x="936.6140350877192" y="243.0" />
+      <point x="837.0" y="243.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="hr.fer.zemris.java.hw16.jvdraw.colors.JColorArea" target="hr.fer.zemris.java.hw16.jvdraw.colors.ColorChangeListener">
+      <point x="0.0" y="-15.5" />
+      <point x="-48.25" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="557.1858974358973" y="178.94230769230774" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

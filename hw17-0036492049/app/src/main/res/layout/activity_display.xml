@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="hr.fer.andriod.hw0036492049.DisplayActivity">
+
+    <TextView
+        android:id="@+id/displayMessage"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:hint="@string/message" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:text="@string/ok"
+        android:layout_below="@id/displayMessage"/>
+
+    <Button
+        android:id="@+id/sendReport"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp40"
+        android:text="@string/send_report"
+        android:layout_below="@id/returnButton"/>
+
+</RelativeLayout>
